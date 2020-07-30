@@ -10,6 +10,8 @@ void main() {
 //      new FlipperDatabaseBrowserPlugin(SqfliteDriver('libCachedImageData.db')));
 //  flipperClient.start();
 
+  WidgetsFlutterBinding.ensureInitialized();
+
   /// 注册 fluro routes
   Router router = Router();
   Routes.configureRoutes(router);
