@@ -120,7 +120,7 @@ class CustomLocalizations implements CupertinoLocalizations {
 
   static const LocalizationsDelegate<CupertinoLocalizations> delegate =
 //  static const LocalizationsDelegate<CustomLocalizations> delegate =
-      _CustomLocalizationsDelegate();
+  _CustomLocalizationsDelegate();
 
 
   /// 基于Map，根据当前语言的 languageCode： en或zh来获取对应的文案
@@ -261,6 +261,17 @@ class CustomLocalizations implements CupertinoLocalizations {
 
   @override
   String timerPickerSecondLabel(int second) => '秒';
+
+  @override
+  // TODO: implement modalBarrierDismissLabel
+  String get modalBarrierDismissLabel => null;
+
+  @override
+  String tabSemanticsLabel({int tabIndex, int tabCount}) {
+    // TODO: implement tabSemanticsLabel
+    // throw UnimplementedError();
+    return 'tabSemanticsLabel : `tabIndex:$tabIndex` and `tabCount:$tabCount`';
+  }
 }
 
 /// 这个抽象类和它的实现类可以拉出去新建类

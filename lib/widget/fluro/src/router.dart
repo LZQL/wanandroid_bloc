@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:wanandroid_bloc/widget/fluro/fluro.dart';
 
-class Router {
+class FluroRouter {
   static final appRouter = new Router();
 
   /// The tree structure that stores the defined routes

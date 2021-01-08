@@ -13,7 +13,7 @@ class Routes {
   static String search = "/search";
   static String about = "/about";
 
-  static void configureRoutes(Router router) {
+  static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = new Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       print("ROUTE WAS NOT FOUND !!!");

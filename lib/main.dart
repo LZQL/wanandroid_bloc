@@ -13,7 +13,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   /// 注册 fluro routes
-  Router router = Router();
+  FluroRouter router = FluroRouter();
   Routes.configureRoutes(router);
   Application.router = router;
 
